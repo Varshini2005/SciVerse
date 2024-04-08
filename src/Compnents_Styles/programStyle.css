@@ -1,0 +1,47 @@
+.Programs
+{
+    margin: 30px 50px;
+ display:flex;
+
+ /* align-items: top; */
+  justify-content: space-between;
+}
+
+.program img{
+    width: 350px;
+    margin-top: 20px 50px;
+    border-radius: 40px;
+    display:block;
+}
+
+.program{
+    /* flex-basis:31%; */
+    position: relative;
+}
+
+.caption
+{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  color: aliceblue;
+  background-color: rgba(0,15, 152, 0.3);
+  border-radius: 40px;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor:pointer;
+  opacity: 0;
+  padding-top: 70%; 
+/* Reason for hover effect on the image  */
+  transition: 0.3s;
+}
+
+.program:hover .caption
+{
+    opacity: 1;
+    padding-top: 0;
+}
